@@ -3,6 +3,6 @@ console.log(`Number of categories: ${totalUl.length}`);
 
 totalUl.forEach(el =>
 {
-    console.log(`Category: ${el.querySelector('h2').textContent}`)
-    console.log(`Elements: ${el.querySelectorAll('li').length}`)
+    console.log(`Category: ${el.firstElementChild.textContent}`)
+    console.log(`Elements: ${el.lastElementChild.children.length}`)
 })

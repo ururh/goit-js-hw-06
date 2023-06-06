@@ -10,7 +10,8 @@ const body = document.body;
 
 changeColor.addEventListener('click', newColor)
   
-  function newColor() {
-        body.style.backgroundColor = getRandomHexColor();
-        spanColor.textContent = getRandomHexColor();
+function newColor() {
+  const randomColor = getRandomHexColor();
+        body.style.backgroundColor = randomColor;
+        spanColor.textContent = randomColor;
       };
